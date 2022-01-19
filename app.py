@@ -39,7 +39,7 @@ def predict():
 93000: "Basement",     
    }
     
-    int_features = [int(float(x)) for x in request.form.values()]
+    int_features = [float(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
     prediction = model.predict(final_features)
     output = litho_keys[prediction[0]]
