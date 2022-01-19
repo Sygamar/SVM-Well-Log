@@ -1,2 +1,2 @@
 # SVM-Well-Log
-The project was done under ONGC Winter training. Using Support Vector Machine Classifier to predict well log data.
+The project was done under ONGC Winter training. Using Support Vector Machine Classifier to predict well log data. At first, I took the unprocessed data and use feature selection techniques to get the five best features for our model training with Support Vector Classifier. Then I took preprocessed data and train our model with the SVC algorithm. Predictions.csv contains the predictions for the test dataset. After the model was trained, I exported the model using the pickle library. Used Flask for implementation of front end and model deployment.
